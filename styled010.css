@@ -163,7 +163,7 @@ aside ul{
     box-shadow: 2px 2px 10px black;
 }
 .voltar:hover{
-    width: 2.7%;
+    background-color: var(--cor04);
     box-shadow: 1px 1px 10px #F2D0A7;
 }
 footer{
