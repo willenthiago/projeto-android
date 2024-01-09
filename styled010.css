@@ -54,19 +54,33 @@ header p{
     padding-right: 10px;
     padding-left: 10px;
 }
-nav{
+span#burguer{
+    display: block;
+    text-align: center;
+    padding: 10px;
     background-color: var(--cor05);
-    padding: 5px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+span#burguer:hover{
+    background-color: var(--cor03);
+    color: black;
+}
+nav{
+    display: none;
+    background-color: var(--cor05);
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.418);
 }
 nav a{
+    display: block;
+    text-align: center;
     text-decoration: none;
     color: white;
     font-size: 13px;
     font-weight: bold;
-    padding-right: 30px;
-    padding-left: 15px;
-    border-radius: 5px;
+    padding: 15px;
+    border-top: 2px solid var(--cor03);
 }
 nav a:hover{
     background-color: var(--cor03);
@@ -80,8 +94,6 @@ main{
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 main h1{
     color: var(--cor05);
@@ -151,11 +163,13 @@ aside h3{
     border-radius: 10px 10px 0px 0px;
 }
 aside ul{
-    list-style-type: '\1F5F8\00a0';
+    /*list-style-type: '\1F5F8\00a0';*/
     list-style-position: inside;
-    columns: 2;
+    columns: 1;
+    padding-bottom: 10px;
 }
 .voltar{
+    display: none;
     margin: 5px 10px;
     width: 2.5%;
     border-radius: 50%;
